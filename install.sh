@@ -4,7 +4,7 @@ apt-get remove docker docker-engine docker.io containerd runc
 
 apt-get update
 
-apt-get install ca-certificates curl gnupg
+apt-get install ca-certificates curl gnupg -y
 
 mkdir -m 0755 -p /etc/apt/keyrings
 
@@ -19,4 +19,4 @@ chmod a+r /etc/apt/keyrings/docker.gpg
 
 apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
